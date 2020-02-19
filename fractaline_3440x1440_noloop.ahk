@@ -94,7 +94,7 @@ Sleep, 600
 
 ; Redeem 7 Paradox bounties
 
-MouseMove, 190, 0, 5, R
+MouseMove, -160, 0, 5, R
 Sleep, 300
 Click d
 Sleep, 300
