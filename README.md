@@ -16,6 +16,7 @@ Requirements for the full loop:
 6) Repeat / go get more glimmer from Spider and repeat.
 
 Hotkeys:
+
 F4 = Full loop of 11 cycles to utilize all 240k glimmer
 
 F5 = 1 full cycle (buy Paradox, donate 400 Fractaline, redeem bounties, dismantle weapons)
