@@ -15,7 +15,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; bounty icon as it is the "neutral" position for all scripts.
 ; -------------------------------------------------------------------------
 
-
 F8::
 Toggle := !Toggle
 loop, 2
@@ -1054,4 +1053,16 @@ Send {Right up}
 Sleep, 1200
 
 }
+return
+
+; -------------------------------------------------------------------------
+; F11 = Loop to buy materials / glimmer from Spider
+; -------------------------------------------------------------------------
+
+F11::SetTimer, aLoop, % (on:=!on) ? "80" : "Off"
+
+aLoop:
+Click d
+Sleep, 1050
+Click u
 return
