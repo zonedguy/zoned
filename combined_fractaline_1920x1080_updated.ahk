@@ -7,15 +7,15 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; Requirements:
 ; Open Tower Obelisk, center your cursor on the middle of the Perfect Paradox bounty, hit hotkey
 ; Don't move your mouse. Come back in 18min. Go get more glimmer from Spider and repeat.
-; Ensure your FOV is set to default. Ensure your screen bounds are maximized. Ensure you are running in only Windowed mode or Fullscreen mode.
+; Ensure your screen bounds are maximized. Ensure you are running in only Windowed mode or Fullscreen mode.
 
 ; -------------------------------------------------------------------------
-; F9 = Farm 8 weapons. See options below to update positioning for desired weapon.
+; F7 = Farm 8 weapons. See options below to update positioning for desired weapon.
 ; No matter your selected weapon, still start script from middle of Paradox
 ; bounty icon as it is the "neutral" position for all scripts.
 ; -------------------------------------------------------------------------
 
-F8::
+F7::
 Toggle := !Toggle
 loop, 2
 {
@@ -699,24 +699,15 @@ Sleep, 1200
 return
 
 ; -------------------------------------------------------------------------
-; F7 = Donate Fractaline only option.
+; F7 = Alternate weapon farming at the top of the file
 ; -------------------------------------------------------------------------
 
-F7::SetTimer, aLoop, % (on:=!on) ? "80" : "Off"
-
-aLoop:
-Click d
-Sleep, 3100
-Click u
-Sleep, 1200
-return
-
 ; -------------------------------------------------------------------------
-; F9 = Full 20 loop to buy Trophy Hunters, donate, redeem and dismantle. 
+; F8 = Full 20 loop to buy Trophy Hunters, donate, redeem and dismantle. 
 ; Primarily for core farming vs. Paradox shard farming.
 ; -------------------------------------------------------------------------
 
-F9::
+F8::
 Toggle := !Toggle
 loop, 20
 {
@@ -884,11 +875,11 @@ Sleep, 1200
 return
 
 ; -------------------------------------------------------------------------
-; F10 = Single loop to buy Trophy Hunters, donate, redeem and dismantle. 
+; F9 = Single loop to buy Trophy Hunters, donate, redeem and dismantle. 
 ; Maximum for core farming vs. Paradox shard farming.
 ; -------------------------------------------------------------------------
 
-F10::
+F9::
 Toggle := !Toggle
 loop, 12
 {
@@ -1053,6 +1044,19 @@ Send {Right up}
 Sleep, 1200
 
 }
+return
+
+; -------------------------------------------------------------------------
+; F10 = Donate Fractaline only option.
+; -------------------------------------------------------------------------
+
+F10::SetTimer, aLoop, % (on:=!on) ? "80" : "Off"
+
+aLoop:
+Click d
+Sleep, 3100
+Click u
+Sleep, 1200
 return
 
 ; -------------------------------------------------------------------------
