@@ -15,7 +15,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; bounty icon as it is the "neutral" position for all scripts.
 ; -------------------------------------------------------------------------
 
-F9::
+F8::
 Toggle := !Toggle
 loop, 2
 {
@@ -32,7 +32,7 @@ loop, 2
 ; Bygones (300, 360)
 ; Line in the Sand (400, 360)
 
-XPosChange = 0
+XPosChange = 100
 YPosChange = 0
 
 If not Toggle
@@ -42,18 +42,6 @@ MouseMove XPosChange, YPosChange, 5, R
 Sleep 600
 
 ; Buy 7 Paradox bounties
-Click d
-Sleep, 1700
-Click u
-Sleep, 600
-Click d
-Sleep, 1700
-Click u
-Sleep, 600
-Click d
-Sleep, 1700(left down)(left up)(right down)(right up)
-Click u
-Sleep, 600
 Click d
 Sleep, 1700
 Click u
@@ -124,24 +112,12 @@ Sleep, 150
 Send {a up}
 Sleep, 600
 
-; Redeem 7 Paradox bounties
+; Redeem 4 bounties
 
 If not Toggle
 	break
 	
 MouseMove, 190, 0, 5, R
-Sleep, 300
-Click d
-Sleep, 300
-Click u
-Sleep, 300
-Click d
-Sleep, 300
-Click u
-Sleep, 300
-Click d
-Sleep, 300
-Click u
 Sleep, 300
 Click d
 Sleep, 300
@@ -167,6 +143,12 @@ Sleep, 150
 Send {Esc up}
 Sleep, 1000
 MouseMove, -190, 0, 5, R
+Sleep, 1200
+
+; Go to Window II
+Send {Right down}
+Sleep, 150
+Send {Right up}
 Sleep, 1200
 }
 
@@ -371,8 +353,8 @@ Send {Right down}
 Sleep, 150
 Send {Right up}
 Sleep, 1200
-
 }
+return
 
 ; -------------------------------------------------------------------------
 ; F5 = Single loop of full buy / donate / redeem / shard cycle.
@@ -575,6 +557,7 @@ Sleep, 150
 Send {Right up}
 Sleep, 1200
 }
+return
 
 ; -------------------------------------------------------------------------
 ; F6 = Single loop, don't dismantle, just buy bounties / donate / redeem bounties
@@ -713,6 +696,7 @@ Sleep, 1000
 MouseMove, -190, 0, 5, R
 Sleep, 1200
 }
+return
 
 ; -------------------------------------------------------------------------
 ; F7 = Donate Fractaline only option.
@@ -728,32 +712,20 @@ Sleep, 1200
 return
 
 ; -------------------------------------------------------------------------
-; F8 = Single loop to by Trophy Hunters, donate, redeem and dismantle. Primarily
-; for core farming vs. shard farming.
+; F9 = Full 20 loop to buy Trophy Hunters, donate, redeem and dismantle. 
+; Primarily for core farming vs. Paradox shard farming.
 ; -------------------------------------------------------------------------
 
-F8::
+F9::
 Toggle := !Toggle
-loop, 1
+loop, 20
 {
 
 If not Toggle
 	break
 
-; Buy up to 7 bounties
+; Buy up to 4 bounties
 MouseMove, 100, 0, 5, R
-Click d
-Sleep, 1700
-Click u
-Sleep, 600
-Click d
-Sleep, 1700
-Click u
-Sleep, 600
-Click d
-Sleep, 1700
-Click u
-Sleep, 600
 Click d
 Sleep, 1700
 Click u
@@ -823,24 +795,12 @@ Sleep, 150
 Send {a up}
 Sleep, 600
 
-; Redeem up 7 bounties
+; Redeem up 4 bounties
 
 If not Toggle
 	break
 	
 MouseMove, 190, 0, 5, R
-Sleep, 300
-Click d
-Sleep, 300
-Click u
-Sleep, 300
-Click d
-Sleep, 300
-Click u
-Sleep, 300
-Click d
-Sleep, 300
-Click u
 Sleep, 300
 Click d
 Sleep, 300
@@ -882,23 +842,11 @@ Sleep, 800
 MouseMove, -100, 0, 5, R
 Sleep, 1000
 
-; Dismantle up to 7 primary weapons
+; Dismantle up to 4 primary weapons
 
 If not Toggle
 	break
 	
-Send {f down}
-Sleep, 1050
-Send {f up}
-Sleep, 1000
-Send {f down}
-Sleep, 1050
-Send {f up}
-Sleep, 1000
-Send {f down}
-Sleep, 1050
-Send {f up}
-Sleep, 1000
 Send {f down}
 Sleep, 1050
 Send {f up}
@@ -926,35 +874,183 @@ Sleep, 1200
 MouseMove, 650, -120, 5, R
 Sleep, 1200
 
-; Go to Window II then back to neutral position
+; Go to Window II
 Send {Right down}
 Sleep, 150
 Send {Right up}
 Sleep, 1200
 
 }
+return
 
 ; -------------------------------------------------------------------------
-; F10 = test area
+; F10 = Single loop to buy Trophy Hunters, donate, redeem and dismantle. 
+; Maximum for core farming vs. Paradox shard farming.
 ; -------------------------------------------------------------------------
 
 F10::
 Toggle := !Toggle
-loop, 10
+loop, 12
 {
 
 If not Toggle
 	break
 
-; Go to Window I
-Send {left down}
-Sleep, 150
-Send {left up}
-Sleep, 1200
+; Buy up to 4 bounties
+MouseMove, 100, 0, 5, R
+Click d
+Sleep, 1700
+Click u
+Sleep, 600
+Click d
+Sleep, 1700
+Click u
+Sleep, 600
+Click d
+Sleep, 1700
+Click u
+Sleep, 600
+Click d
+Sleep, 1700
+Click u
+Sleep, 600
+MouseMove, -100, 0, 5, R
+Sleep, 600
 
 ; Go to Window I
-Send {right down}
+Send {Left down}
 Sleep, 150
-Send {right up}
+Send {Left up}
 Sleep, 1200
+
+; Donate 400 Fractaline
+
+If not Toggle
+	break
+	
+Click d
+Sleep, 3100
+Click u
+Sleep, 1200
+Click d
+Sleep, 3100
+Click u
+Sleep, 1200
+Click d
+Sleep, 3100
+Click u
+Sleep, 1200
+Click d
+Sleep, 3100
+Click u
+Sleep, 1200
+
+; Open Quest Screen
+
+If not Toggle
+	break
+	
+Send {u down}
+Sleep, 150
+Send {u up}
+Sleep, 250
+Send {a down}
+Sleep, 150
+Send {a up}
+Sleep, 250
+Send {a down}
+Sleep, 150
+Send {a up}
+Sleep, 250
+Send {a down}
+Sleep, 150
+Send {a up}
+Sleep, 600
+
+; Redeem up 4 bounties
+
+If not Toggle
+	break
+	
+MouseMove, 190, 0, 5, R
+Sleep, 300
+Click d
+Sleep, 300
+Click u
+Sleep, 300
+Click d
+Sleep, 300
+Click u
+Sleep, 300
+Click d
+Sleep, 300
+Click u
+Sleep, 300
+Click d
+Sleep, 300
+Click u
+Sleep, 1000
+
+; Exit Quest menu and return to neutral position
+
+Send {Esc down}
+Sleep, 150
+Send {Esc up}
+Sleep, 1000
+MouseMove, -190, 0, 5, R
+Sleep, 1200
+
+; Open inventory, go to primary weapons then first weapon slot
+
+If not Toggle
+	break
+	
+Send {F1 down}
+Sleep, 150
+Send {F1 up}
+Sleep, 800
+MouseMove, -650, 120, 5, R
+Sleep, 800
+MouseMove, -100, 0, 5, R
+Sleep, 1000
+
+; Dismantle up to 4 primary weapons
+
+If not Toggle
+	break
+	
+Send {f down}
+Sleep, 1050
+Send {f up}
+Sleep, 1000
+Send {f down}
+Sleep, 1050
+Send {f up}
+Sleep, 1000
+Send {f down}
+Sleep, 1050
+Send {f up}
+Sleep, 1000
+Send {f down}
+Sleep, 1050
+Send {f up}
+Sleep, 1000
+
+; Exit Bounties and go back to neutral position
+Send {Esc down}
+Sleep, 150
+Send {Esc up}
+Sleep, 1200
+MouseMove, 100, 0, 5, R
+Sleep, 1200
+MouseMove, 650, -120, 5, R
+Sleep, 1200
+
+; Go to Window II
+Send {Right down}
+Sleep, 150
+Send {Right up}
+Sleep, 1200
+
 }
+return
