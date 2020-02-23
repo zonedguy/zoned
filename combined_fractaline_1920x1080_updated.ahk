@@ -15,6 +15,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; bounty icon as it is the "neutral" position for all scripts.
 ; -------------------------------------------------------------------------
 
+
 F8::
 Toggle := !Toggle
 loop, 2
