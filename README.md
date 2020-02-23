@@ -25,9 +25,15 @@ Requirements for the full loop:
 New Hotkey Options:
 
 F4 = Full loop of 12 cycles to utilize all 240k glimmer buying Perfect Paradox guns (MAXIMUM SHARDS)
+
 F5 = 1 full Perfect Paradox cycle (buy up to 7 bounties, donate, redeem, dismantle)
+
 F6 = 1 cycle without dismantling for Paradox god roll farming
+
 F7 = Donate fractaline ONLY via loop (Toggle on and off with F7)
+
 F8 = Alternate weapon farming. Edit the downloaded file with an editor (i.e. Notepad) and see the first comments to update XPosChange and YPosChange variables.
+
 F9 = Full loop of 20 cycles to redeem 240k glimmer buying Trophy Hunter guns (MAXIMUM CORES)
+
 F10 = 1 full cycle of core farming.
