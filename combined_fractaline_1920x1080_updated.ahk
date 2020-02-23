@@ -51,7 +51,7 @@ Sleep, 1700
 Click u
 Sleep, 600
 Click d
-Sleep, 1700
+Sleep, 1700(left down)(left up)(right down)(right up)
 Click u
 Sleep, 600
 Click d
@@ -75,9 +75,9 @@ MouseMove -XPosChange, -YPosChange, 5, R
 Sleep 600
 
 ; Go to Window I
-Send (Left down)
+Send {Left down}
 Sleep, 150
-Send (Left up)
+Send {Left up}
 Sleep, 1200
 
 ; Donate 400 Fractaline
@@ -214,9 +214,9 @@ Click u
 Sleep, 600
 
 ; Go to Window I
-Send (Left down)
+Send {Left down}
 Sleep, 150
-Send (Left up)
+Send {Left up}
 Sleep, 1200
 
 ; Donate 400 Fractaline
@@ -367,9 +367,9 @@ MouseMove, 650, -120, 5, R
 Sleep, 1200
 
 ; Go to Window II then back to neutral position
-Send (Right down)
+Send {Right down}
 Sleep, 150
-Send (Right up)
+Send {Right up}
 Sleep, 1200
 
 }
@@ -417,9 +417,9 @@ Click u
 Sleep, 600
 
 ; Go to Window I
-Send (Left down)
+Send {Left down}
 Sleep, 150
-Send (Left up)
+Send {Left up}
 Sleep, 1200
 
 ; Donate 400 Fractaline
@@ -570,9 +570,9 @@ MouseMove, 650, -120, 5, R
 Sleep, 1200
 
 ; Go to Window II then back to neutral position
-Send (Right down)
+Send {Right down}
 Sleep, 150
-Send (Right up)
+Send {Right up}
 Sleep, 1200
 }
 
@@ -619,9 +619,9 @@ Click u
 Sleep, 600
 
 ; Go to Window I
-Send (Left down)
+Send {Left down}
 Sleep, 150
-Send (Left up)
+Send {Left up}
 Sleep, 1200
 
 ; Donate 400 Fractaline
@@ -774,9 +774,9 @@ MouseMove, -100, 0, 5, R
 Sleep, 600
 
 ; Go to Window I
-Send (Left down)
+Send {Left down}
 Sleep, 150
-Send (Left up)
+Send {Left up}
 Sleep, 1200
 
 ; Donate 400 Fractaline
@@ -927,9 +927,9 @@ MouseMove, 650, -120, 5, R
 Sleep, 1200
 
 ; Go to Window II then back to neutral position
-Send (Right down)
+Send {Right down}
 Sleep, 150
-Send (Right up)
+Send {Right up}
 Sleep, 1200
 
 }
@@ -947,14 +947,14 @@ If not Toggle
 	break
 
 ; Go to Window I
-Send (left down)
+Send {left down}
 Sleep, 150
-Send (left up)
+Send {left up}
 Sleep, 1200
 
 ; Go to Window I
-Send (right down)
+Send {right down}
 Sleep, 150
-Send (right up)
+Send {right up}
 Sleep, 1200
 }
