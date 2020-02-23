@@ -11,6 +11,7 @@ Steps:
 ---- Fullscreen Windowed will not work if your native resolution is > 1080p.
 
 ---- Ensure your screen bounds are default (maximum)
+
 3) Once downloaded, double click on the script of your choice to activate the hotkeys. AutoHotKey does not have a GUI, it just "launches" and has a green "H" icon in the task bar by your clock.
 
 Requirements for the full loop:
