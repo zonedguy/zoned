@@ -15,9 +15,10 @@ Steps:
 3) Once downloaded, double click on the script of your choice to activate the hotkeys. AutoHotKey does not have a GUI, it just "launches" and has a green "H" icon in the task bar by your clock.
 
 Requirements for all options:
-1) Open Tower Obelisk, center your cursor on the middle of the Perfect Paradox bounty, hit F4
-2) Don't move your mouse until the script it finishes (~12min for the full Paradox loop)
-3) Repeat / go get more glimmer from Spider and repeat.
+1) Ensure your primary weapon inventory is empty except your equipped weapon 
+2) Open Tower Obelisk, center your cursor on the middle of the Perfect Paradox bounty, hit hotkey of your choice
+3) Don't move your mouse until the script it finishes (~12min for the full Paradox loop)
+4) Repeat / go get more glimmer from Spider and repeat.
 
 New Hotkey Options:
 
