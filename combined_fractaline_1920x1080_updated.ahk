@@ -1054,6 +1054,10 @@ F10::
 Toggle := !Toggle
 loop, 1000
 {
+
+If not Toggle
+	break
+	
 Click d
 Sleep, 3100
 Click u
@@ -1069,6 +1073,10 @@ F11::
 Toggle := !Toggle
 loop, 1000
 {
+
+If not Toggle
+	break
+	
 Click d
 Sleep, 1050
 Click u
