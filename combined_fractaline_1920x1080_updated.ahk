@@ -2,6 +2,7 @@
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+#MaxThreadsPerHotkey 2
 
 ; Requirements:
 ; Open Tower Obelisk, center your cursor on the middle of the Perfect Paradox bounty, hit hotkey
@@ -9,14 +10,14 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; Ensure your FOV is set to default. Ensure your screen bounds are maximized. Ensure you are running in only Windowed mode or Fullscreen mode.
 
 ; -------------------------------------------------------------------------
-; Weapon farm. See options below to update positioning for desired weapon.
+; F9 = Farm 8 weapons. See options below to update positioning for desired weapon.
 ; No matter your selected weapon, still start script from middle of Paradox
 ; bounty icon as it is the "neutral" position for all scripts.
 ; -------------------------------------------------------------------------
 
 F9::
-if Toggle := !Toggle
-loop, 3
+Toggle := !Toggle
+loop, 2
 {
 
 ; If you want to change the weapon being farmed, update XPosChange and YPosChange below
@@ -170,12 +171,12 @@ Sleep, 1200
 }
 
 ; -------------------------------------------------------------------------
-; Full 12 loops to utilize 240k glimmer to buy a full set of bounties, donate 
+; F4 = Full 12 loops to utilize 240k glimmer to buy a full set of bounties, donate 
 ; fractaline, and shard weapons automatically.
 ; -------------------------------------------------------------------------
 
 F4::
-if Toggle := !Toggle
+Toggle := !Toggle
 loop, 12
 {
 
@@ -374,11 +375,11 @@ Sleep, 1200
 }
 
 ; -------------------------------------------------------------------------
-; Single loop of full buy / donate / redeem / shard cycle.
+; F5 = Single loop of full buy / donate / redeem / shard cycle.
 ; -------------------------------------------------------------------------
 
 F5::
-if Toggle := !Toggle
+Toggle := !Toggle
 loop, 1
 {
 
@@ -576,11 +577,11 @@ Sleep, 1200
 }
 
 ; -------------------------------------------------------------------------
-; Don't loop, don't dismantle, just buy bounties / donate / redeem bounties
+; F6 = Single loop, don't dismantle, just buy bounties / donate / redeem bounties
 ; -------------------------------------------------------------------------
 
 F6::
-if Toggle := !Toggle
+Toggle := !Toggle
 loop, 1
 {
 
@@ -714,7 +715,7 @@ Sleep, 1200
 }
 
 ; -------------------------------------------------------------------------
-; Donate Fractaline only option.
+; F7 = Donate Fractaline only option.
 ; -------------------------------------------------------------------------
 
 F7::SetTimer, aLoop, % (on:=!on) ? "80" : "Off"
@@ -724,16 +725,15 @@ Click d
 Sleep, 3100
 Click u
 Sleep, 1200
-
-}
+return
 
 ; -------------------------------------------------------------------------
-; Single loop to by Trophy Hunters, donate, redeem and dismantle. Primarily
+; F8 = Single loop to by Trophy Hunters, donate, redeem and dismantle. Primarily
 ; for core farming vs. shard farming.
 ; -------------------------------------------------------------------------
 
 F8::
-if Toggle := !Toggle
+Toggle := !Toggle
 loop, 1
 {
 
@@ -932,4 +932,29 @@ Sleep, 150
 Send (Right up)
 Sleep, 1200
 
+}
+
+; -------------------------------------------------------------------------
+; F10 = test area
+; -------------------------------------------------------------------------
+
+F10::
+Toggle := !Toggle
+loop, 10
+{
+
+If not Toggle
+	break
+
+; Go to Window I
+Send (left down)
+Sleep, 150
+Send (left up)
+Sleep, 1200
+
+; Go to Window I
+Send (right down)
+Sleep, 150
+Send (right up)
+Sleep, 1200
 }
