@@ -1050,23 +1050,28 @@ return
 ; F10 = Donate Fractaline only option.
 ; -------------------------------------------------------------------------
 
-F10::SetTimer, aLoop, % (on:=!on) ? "80" : "Off"
-
-aLoop:
+F10::
+Toggle := !Toggle
+loop, 1000
+{
 Click d
 Sleep, 3100
 Click u
 Sleep, 1200
+}
 return
 
 ; -------------------------------------------------------------------------
 ; F11 = Loop to buy materials / glimmer from Spider
 ; -------------------------------------------------------------------------
 
-F11::SetTimer, aLoop, % (on:=!on) ? "80" : "Off"
-
-aLoop:
+F11::
+Toggle := !Toggle
+loop, 1000
+{
 Click d
 Sleep, 1050
 Click u
+Sleep, 1200
+}
 return
