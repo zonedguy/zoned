@@ -34,3 +34,5 @@ F8 = Alternate weapon farming. Edit the downloaded file with an editor (i.e. Not
 F9 = Full loop of 20 cycles to utilize 240k glimmer buying/sharding Trophy Hunter guns (MAXIMUM CORES)
 
 F10 = 1 full cycle of core farming.
+
+F11 = loop to buy materials / glimmer from Spider
