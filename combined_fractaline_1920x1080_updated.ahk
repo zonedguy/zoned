@@ -155,7 +155,7 @@ If Moveto2ndWindow = True
 	Sleep, 150
 }
 
-If not Toggle
+If !Toggle
 	break
 
 MouseMove XPosChange, YPosChange, 5, R
@@ -198,7 +198,7 @@ Sleep, 1200
 
 ; Donate 400 Fractaline
 
-If not Toggle
+If !Toggle
 	break
 	
 Click d
@@ -220,7 +220,7 @@ Sleep, 1200
 
 ; Open Quest Screen
 
-If not Toggle
+If !Toggle
 	break
 	
 Send {u down}
@@ -242,7 +242,7 @@ Sleep, 600
 
 ; Redeem 4 bounties
 
-If not Toggle
+If !Toggle
 	break
 	
 MouseMove, 190, 0, 5, R
@@ -290,7 +290,7 @@ Toggle := !Toggle
 loop, 12
 {
 
-If not Toggle
+If !Toggle
 	break
 	
 ; Buy up to 7 bounties
@@ -331,7 +331,7 @@ Sleep, 1200
 
 ; Donate 400 Fractaline
 
-If not Toggle
+If !Toggle
 	break
 	
 Click d
@@ -353,7 +353,7 @@ Sleep, 1200
 
 ; Open Quest Screen
 
-If not Toggle
+If !Toggle
 	break
 	
 Send {u down}
@@ -375,7 +375,7 @@ Sleep, 600
 
 ; Redeem up 7 bounties
 
-If not Toggle
+If !Toggle
 	break
 	
 MouseMove, 190, 0, 5, R
@@ -420,7 +420,7 @@ Sleep, 1200
 
 ; Open inventory, go to primary weapons then first weapon slot
 
-If not Toggle
+If !Toggle
 	break
 	
 Send {F1 down}
@@ -434,7 +434,7 @@ Sleep, 1000
 
 ; Dismantle up to 7 primary weapons
 
-If not Toggle
+If !Toggle
 	break
 	
 Send {f down}
@@ -493,7 +493,7 @@ Toggle := !Toggle
 loop, 1
 {
 
-If not Toggle
+If !Toggle
 	break
 	
 ; Buy 7 Paradox bounties
@@ -534,7 +534,7 @@ Sleep, 1200
 
 ; Donate 400 Fractaline
 
-If not Toggle
+If !Toggle
 	break
 	
 Click d
@@ -556,7 +556,7 @@ Sleep, 1200
 
 ; Open Quest Screen
 
-If not Toggle
+If !Toggle
 	break
 	
 Send {u down}
@@ -578,7 +578,7 @@ Sleep, 600
 
 ; Redeem 7 Paradox bounties
 
-If not Toggle
+If !Toggle
 	break
 	
 MouseMove, 190, 0, 5, R
@@ -623,7 +623,7 @@ Sleep, 1200
 
 ; Open inventory, go to primary weapons then first weapon slot
 
-If not Toggle
+If !Toggle
 	break
 	
 Send {F1 down}
@@ -637,7 +637,7 @@ Sleep, 1000
 
 ; Dismantle 7 primary weapons
 
-If not Toggle
+If !Toggle
 	break
 	
 Send {f down}
@@ -696,7 +696,7 @@ Toggle := !Toggle
 loop, 1
 {
 
-If not Toggle
+If !Toggle
 	break
 	
 ; Buy 7 Paradox bounties
@@ -737,7 +737,7 @@ Sleep, 1200
 
 ; Donate 400 Fractaline
 
-If not Toggle
+If !Toggle
 	break
 	
 Click d
@@ -759,7 +759,7 @@ Sleep, 1200
 
 ; Open Quest Screen
 
-If not Toggle
+If !Toggle
 	break
 	
 Send {u down}
@@ -781,7 +781,7 @@ Sleep, 600
 
 ; Redeem 7 Paradox bounties
 
-If not Toggle
+If !Toggle
 	break
 	
 MouseMove, 190, 0, 5, R
@@ -840,7 +840,7 @@ Toggle := !Toggle
 loop, 20
 {
 
-If not Toggle
+If !Toggle
 	break
 
 ; Buy up to 4 bounties
@@ -872,7 +872,7 @@ Sleep, 1200
 
 ; Donate 400 Fractaline
 
-If not Toggle
+If !Toggle
 	break
 	
 Click d
@@ -894,7 +894,7 @@ Sleep, 1200
 
 ; Open Quest Screen
 
-If not Toggle
+If !Toggle
 	break
 	
 Send {u down}
@@ -916,7 +916,7 @@ Sleep, 600
 
 ; Redeem up 4 bounties
 
-If not Toggle
+If !Toggle
 	break
 	
 MouseMove, 190, 0, 5, R
@@ -949,7 +949,7 @@ Sleep, 1200
 
 ; Open inventory, go to primary weapons then first weapon slot
 
-If not Toggle
+If !Toggle
 	break
 	
 Send {F1 down}
@@ -963,7 +963,7 @@ Sleep, 1000
 
 ; Dismantle up to 4 primary weapons
 
-If not Toggle
+If !Toggle
 	break
 	
 Send {f down}
@@ -1012,7 +1012,7 @@ Toggle := !Toggle
 loop, 12
 {
 
-If not Toggle
+If !Toggle
 	break
 
 ; Buy up to 4 bounties
@@ -1044,7 +1044,7 @@ Sleep, 1200
 
 ; Donate 400 Fractaline
 
-If not Toggle
+If !Toggle
 	break
 	
 Click d
@@ -1066,7 +1066,7 @@ Sleep, 1200
 
 ; Open Quest Screen
 
-If not Toggle
+If !Toggle
 	break
 	
 Send {u down}
@@ -1088,7 +1088,7 @@ Sleep, 600
 
 ; Redeem up 4 bounties
 
-If not Toggle
+If !Toggle
 	break
 	
 MouseMove, 190, 0, 5, R
@@ -1121,7 +1121,7 @@ Sleep, 1200
 
 ; Open inventory, go to primary weapons then first weapon slot
 
-If not Toggle
+If !Toggle
 	break
 	
 Send {F1 down}
@@ -1135,7 +1135,7 @@ Sleep, 1000
 
 ; Dismantle up to 4 primary weapons
 
-If not Toggle
+If !Toggle
 	break
 	
 Send {f down}
@@ -1183,7 +1183,7 @@ Toggle := !Toggle
 loop, 1000
 {
 
-If not Toggle
+If !Toggle
 	break
 	
 Click d
@@ -1202,12 +1202,12 @@ Toggle := !Toggle
 loop, 1000
 {
 
-If not Toggle
+If !Toggle
 	break
 	
 Click d
 Sleep, 1050
 Click u
-Sleep, 1200
+Sleep, 200
 }
 return
