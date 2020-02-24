@@ -34,7 +34,7 @@ F6 = 1 cycle without dismantling for Paradox god roll farming
 
 F7 = Alternate weapon farming. Edit the downloaded file with an editor (i.e. Notepad) and see the first comments to update XPosChange and YPosChange variables.
 
-; Weapon Selections:
+Weapon Selections:
 1 = Perfect Paradox = (0, 0, False, False, False)
 2 = Trophy Hunter = (100, 0, False, True, False)
 3 = Pyroclastic Flow = (200, 0, False, False, True)
@@ -49,6 +49,7 @@ F7 = Alternate weapon farming. Edit the downloaded file with an editor (i.e. Not
 12 = Gallant Charge = (400, 0, True, True, False)
 13 = Jack King Queen 3 = (200, 180, True, True, False)
 14 = Patron of Lost Causes (300, 180, True, False, False)
+
 15 = Traveler's Judgement 5 (400, 180, True, True, False)
 
 -----------------
