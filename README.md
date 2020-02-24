@@ -6,11 +6,11 @@ Steps:
 1) Download https://www.autohotkey.com/
 2) Download the combined 1080p script. The new combined script is 1920x1080 specific.
 
----- Ensure you are running in Fullscreen or Windowed modes only at 1920x1080.
+		Ensure you are running in Fullscreen or Windowed modes only at 1920x1080.
 
----- Fullscreen Windowed will not work if your native resolution is > 1080p.
+		Fullscreen Windowed will not work if your native resolution is > 1080p.
 
----- Ensure your screen bounds are default (maximum)
+		Ensure your screen bounds are default (maximum)
 
 3) Once downloaded, double click on the script of your choice to activate the hotkeys. AutoHotKey does not have a GUI, it just "launches" and has a green "H" icon in the task bar by your clock.
 
