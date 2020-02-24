@@ -36,35 +36,35 @@ F7 = Alternate weapon farming. Edit the downloaded file with an editor (i.e. Not
 
 	Weapon Selections:
 
-		#1 = Perfect Paradox = (0, 0, False, False, False)
+		#1 = Perfect Paradox
 
-		#2 = Trophy Hunter = (100, 0, False, True, False)
+		#2 = Trophy Hunter
 
-		#3 = Pyroclastic Flow = (200, 0, False, False, True)
+		#3 = Pyroclastic Flow
 
-		#4 = Steelfeather = (200, 180, False, False, False)
+		#4 = Steelfeather
 
-		#5 = Black Scorpion (300, 180, False, True, False)
+		#5 = Black Scorpion
 
-		#6 = Breachlight (400, 180, False, False, False)
+		#6 = Breachlight
 
-		#7 = Martyrs (200, 360, False, True, False)
+		#7 = Martyr's Retribution
 
-		#8 = Bygones (300, 360, False, False, False)
+		#8 = Bygones
 
-		#9 = Line in the Sand (400, 360, False, False, True)
+		#9 = Line in the Sand
 
-		#10 = Last Perdition = (200, 0, True, True, False)
+		#10 = Last Perdition
 
-		#11 = Infinite Paths 8 = (300, 0, True, True, False)
+		#11 = Infinite Paths 8
 
-		#12 = Gallant Charge = (400, 0, True, True, False)
+		#12 = Gallant Charge
 
-		#13 = Jack King Queen 3 = (200, 180, True, True, False)
+		#13 = Jack King Queen 3
 
-		#14 = Patron of Lost Causes (300, 180, True, False, False)
+		#14 = Patron of Lost Causes
 
-		#15 = Traveler's Judgement 5 (400, 180, True, True, False)
+		#15 = Traveler's Judgement 5
 
 -----------------
 
