@@ -6,6 +6,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Requirements:
 ; Open Tower Obelisk, center your cursor on the middle of the Perfect Paradox bounty, hit hotkey
+; Ensure your Primary weapon inventory is empty.
 ; Don't move your mouse. Come back in 18min. Go get more glimmer from Spider and repeat.
 ; Ensure your screen bounds are maximized. Ensure you are running in only Windowed mode or Fullscreen mode.
 
@@ -17,23 +18,142 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 F7::
 Toggle := !Toggle
+; Input request to set weapon variable listed below
+
+InputBox, WeaponFarm, Weapon Select, # weapon to farm?, , 400, 200, , , , 120, 1
+
+XPosChange = 0
+YPosChange = 0
+Moveto2ndWindow = False
+IsEnergy = False
+IsHeavy = False
+
+; Weapon Selections:
+; 1 = Perfect Paradox = (0, 0, False, False, False)
+; 2 = Trophy Hunter = (100, 0, False, True, False)
+; 3 = Pyroclastic Flow = (200, 0, False, False, True)
+; 4 = Steelfeather = (200, 180, False, False, False)
+; 5 = Black Scorpion (300, 180, False, True, False)
+; 6 = Breachlight (400, 180, False, False, False)
+; 7 = Martyrs (200, 360, False, True, False)
+; 8 = Bygones (300, 360, False, False, False)
+; 9 = Line in the Sand (400, 360, False, False, True)
+; 10 = Last Perdition = (200, 0, True, True, False)
+; 11 = Infinite Paths 8 = (300, 0, True, True, False)
+; 12 = Gallant Charge = (400, 0, True, True, False)
+; 13 = Jack King Queen 3 = (200, 180, True, True, False)
+; 14 = Patron of Lost Causes (300, 180, True, False, False)
+; 15 = Traveler's Judgement 5 (400, 180, True, True, False)
+
+if (WeaponFarm = 2)
+{
+	; Trophy Hunter
+	XPosChange = 100
+	YPosChange = 0
+	Moveto2ndWindow = False
+}
+else if (WeaponFarm = 3)
+{
+	; Pyroclastic Flow
+	XPosChange = 200
+	YPosChange = 0
+	Moveto2ndWindow = False
+}
+else if (WeaponFarm = 4)
+{
+	; Steelfeather
+	XPosChange = 200
+	YPosChange = 180
+	Moveto2ndWindow = False
+}
+else if (WeaponFarm = 5)
+{
+	; Black Scorpion
+	XPosChange = 300
+	YPosChange = 180
+	Moveto2ndWindow = False
+}
+else if (WeaponFarm = 6)
+{
+	; Breachlight
+	XPosChange = 400
+	YPosChange = 180
+	Moveto2ndWindow = False
+}
+else if (WeaponFarm = 7)
+{
+	; Martyr's Retribution
+	XPosChange = 200
+	YPosChange = 360
+	Moveto2ndWindow = False
+}
+else if (WeaponFarm = 8)
+{
+	; Bygones
+	XPosChange = 300
+	YPosChange = 360
+	Moveto2ndWindow = False
+}
+else if (WeaponFarm = 9)
+{
+	; Line in the Sand
+	XPosChange = 400
+	YPosChange = 360
+	Moveto2ndWindow = False
+}
+else if (WeaponFarm = 10)
+{
+	; Last Perdition
+	XPosChange = 200
+	YPosChange = 0
+	Moveto2ndWindow = True
+}
+else if (WeaponFarm = 11)
+{
+	; Infinite Paths 8
+	XPosChange = 300
+	YPosChange = 0
+	Moveto2ndWindow = True
+}
+else if (WeaponFarm = 12)
+{
+	; Gallant Charge 
+	XPosChange = 400
+	YPosChange = 0
+	Moveto2ndWindow = True
+}
+else if (WeaponFarm = 13)
+{
+	; Jack Queen King 3
+	XPosChange = 200
+	YPosChange = 180
+	Moveto2ndWindow = True
+}
+else if (WeaponFarm = 14)
+{
+	; Patron of Lost Causes
+	XPosChange = 300
+	YPosChange = 180
+	Moveto2ndWindow = True
+}
+else if (WeaponFarm = 15)
+{
+	; Traveler's Judgement 5
+	XPosChange = 400
+	YPosChange = 180
+	Moveto2ndWindow = True
+}
+
 loop, 2
 {
 
-; If you want to change the weapon being farmed, update XPosChange and YPosChange below
-; to match the values shown below (X, Y)
-
-; Trophy Hunter = (100, 0)
-; Pyroclastic Flow = (200, 0)
-; Steelfeather = (200, 180)
-; Black Scorpion (300, 180)
-; Breachlight (400, 180)
-; Martyrs (200, 360)
-; Bygones (300, 360)
-; Line in the Sand (400, 360)
-
-XPosChange = 100
-YPosChange = 0
+If Moveto2ndWindow = True
+{
+	Send {Right down}
+	Sleep, 150
+	Send {Right up}
+	Sleep, 150
+}
 
 If not Toggle
 	break
@@ -41,7 +161,7 @@ If not Toggle
 MouseMove XPosChange, YPosChange, 5, R
 Sleep 600
 
-; Buy 7 Paradox bounties
+; Buy 4 weapon bounties
 Click d
 Sleep, 1700
 Click u
@@ -61,6 +181,14 @@ Sleep, 600
 
 MouseMove -XPosChange, -YPosChange, 5, R
 Sleep 600
+
+If Moveto2ndWindow = True
+{
+	Send {Left down}
+	Sleep, 150
+	Send {Left up}
+	Sleep, 150
+}
 
 ; Go to Window I
 Send {Left down}
@@ -828,7 +956,7 @@ Send {F1 down}
 Sleep, 150
 Send {F1 up}
 Sleep, 800
-MouseMove, -650, 120, 5, R
+MouseMove, -650, 300, 5, R
 Sleep, 800
 MouseMove, -100, 0, 5, R
 Sleep, 1000
@@ -862,7 +990,7 @@ Send {Esc up}
 Sleep, 1200
 MouseMove, 100, 0, 5, R
 Sleep, 1200
-MouseMove, 650, -120, 5, R
+MouseMove, 650, -300, 5, R
 Sleep, 1200
 
 ; Go to Window II
