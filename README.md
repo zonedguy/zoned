@@ -34,23 +34,37 @@ F6 = 1 cycle without dismantling for Paradox god roll farming
 
 F7 = Alternate weapon farming. Edit the downloaded file with an editor (i.e. Notepad) and see the first comments to update XPosChange and YPosChange variables.
 
-Weapon Selections:
-1 = Perfect Paradox = (0, 0, False, False, False)
-2 = Trophy Hunter = (100, 0, False, True, False)
-3 = Pyroclastic Flow = (200, 0, False, False, True)
-4 = Steelfeather = (200, 180, False, False, False)
-5 = Black Scorpion (300, 180, False, True, False)
-6 = Breachlight (400, 180, False, False, False)
-7 = Martyrs (200, 360, False, True, False)
-8 = Bygones (300, 360, False, False, False)
-9 = Line in the Sand (400, 360, False, False, True)
-10 = Last Perdition = (200, 0, True, True, False)
-11 = Infinite Paths 8 = (300, 0, True, True, False)
-12 = Gallant Charge = (400, 0, True, True, False)
-13 = Jack King Queen 3 = (200, 180, True, True, False)
-14 = Patron of Lost Causes (300, 180, True, False, False)
+	Weapon Selections:
 
-15 = Traveler's Judgement 5 (400, 180, True, True, False)
+		#1 = Perfect Paradox = (0, 0, False, False, False)
+
+		#2 = Trophy Hunter = (100, 0, False, True, False)
+
+		#3 = Pyroclastic Flow = (200, 0, False, False, True)
+
+		#4 = Steelfeather = (200, 180, False, False, False)
+
+		#5 = Black Scorpion (300, 180, False, True, False)
+
+		#6 = Breachlight (400, 180, False, False, False)
+
+		#7 = Martyrs (200, 360, False, True, False)
+
+		#8 = Bygones (300, 360, False, False, False)
+
+		#9 = Line in the Sand (400, 360, False, False, True)
+
+		#10 = Last Perdition = (200, 0, True, True, False)
+
+		#11 = Infinite Paths 8 = (300, 0, True, True, False)
+
+		#12 = Gallant Charge = (400, 0, True, True, False)
+
+		#13 = Jack King Queen 3 = (200, 180, True, True, False)
+
+		#14 = Patron of Lost Causes (300, 180, True, False, False)
+
+		#15 = Traveler's Judgement 5 (400, 180, True, True, False)
 
 -----------------
 
