@@ -4,7 +4,7 @@ AutoHotKey files to automate the donation of Destiny 2 Fractaline while redeemin
 
 Steps:
 1) Download https://www.autohotkey.com/
-2) Download the combined 1080p script. The new combined script is 1920x1080 specific.
+2) Download the combined 1080p script: https://raw.githubusercontent.com/zonedguy/zoned/master/combined_fractaline_1920x1080_updated.ahk
 
 		Ensure you are running in Fullscreen or Windowed modes only at 1920x1080.
 
