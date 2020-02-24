@@ -2,7 +2,7 @@
 
 AutoHotKey files to automate the donation of Destiny 2 Fractaline while redeeming Paradox bounties and dismantling weapons.
 
-Steps:
+Setup process:
 1) Download https://www.autohotkey.com/
 2) Download the combined 1080p script: https://raw.githubusercontent.com/zonedguy/zoned/master/combined_fractaline_1920x1080_updated.ahk
 
