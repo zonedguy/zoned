@@ -159,25 +159,25 @@ If !Toggle
 	break
 
 MouseMove XPosChange, YPosChange, 5, R
-Sleep 600
+Sleep 800
 
 ; Buy 4 weapon bounties
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 
 MouseMove -XPosChange, -YPosChange, 5, R
 Sleep 600
@@ -238,7 +238,7 @@ Sleep, 250
 Send {a down}
 Sleep, 150
 Send {a up}
-Sleep, 600
+Sleep, 850
 
 ; Redeem 4 bounties
 
@@ -246,7 +246,7 @@ If !Toggle
 	break
 	
 MouseMove, 190, 0, 5, R
-Sleep, 300
+Sleep, 800
 Click d
 Sleep, 300
 Click u
@@ -297,31 +297,31 @@ If !Toggle
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 
 ; Go to Window I
 Send {Left down}
@@ -371,7 +371,7 @@ Sleep, 250
 Send {a down}
 Sleep, 150
 Send {a up}
-Sleep, 600
+Sleep, 850
 
 ; Redeem up 7 bounties
 
@@ -379,7 +379,7 @@ If !Toggle
 	break
 	
 MouseMove, 190, 0, 5, R
-Sleep, 300
+Sleep, 800
 Click d
 Sleep, 300
 Click u
@@ -500,31 +500,31 @@ If !Toggle
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 
 ; Go to Window I
 Send {Left down}
@@ -574,7 +574,7 @@ Sleep, 250
 Send {a down}
 Sleep, 150
 Send {a up}
-Sleep, 600
+Sleep, 850
 
 ; Redeem 7 Paradox bounties
 
@@ -703,31 +703,31 @@ If !Toggle
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 
 ; Go to Window I
 Send {Left down}
@@ -777,7 +777,7 @@ Sleep, 250
 Send {a down}
 Sleep, 150
 Send {a up}
-Sleep, 600
+Sleep, 850
 
 ; Redeem 7 Paradox bounties
 
@@ -845,24 +845,25 @@ If !Toggle
 
 ; Buy up to 4 bounties
 MouseMove, 100, 0, 5, R
+Sleep, 800
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 MouseMove, -100, 0, 5, R
-Sleep, 600
+Sleep, 850
 
 ; Go to Window I
 Send {Left down}
@@ -912,7 +913,7 @@ Sleep, 250
 Send {a down}
 Sleep, 150
 Send {a up}
-Sleep, 600
+Sleep, 850
 
 ; Redeem up 4 bounties
 
@@ -920,7 +921,7 @@ If !Toggle
 	break
 	
 MouseMove, 190, 0, 5, R
-Sleep, 300
+Sleep, 800
 Click d
 Sleep, 300
 Click u
@@ -1017,24 +1018,25 @@ If !Toggle
 
 ; Buy up to 4 bounties
 MouseMove, 100, 0, 5, R
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 Click d
 Sleep, 1700
 Click u
-Sleep, 600
+Sleep, 850
 MouseMove, -100, 0, 5, R
-Sleep, 600
+Sleep, 850
 
 ; Go to Window I
 Send {Left down}
@@ -1084,7 +1086,7 @@ Sleep, 250
 Send {a down}
 Sleep, 150
 Send {a up}
-Sleep, 600
+Sleep, 850
 
 ; Redeem up 4 bounties
 
@@ -1092,7 +1094,7 @@ If !Toggle
 	break
 	
 MouseMove, 190, 0, 5, R
-Sleep, 300
+Sleep, 800
 Click d
 Sleep, 300
 Click u
