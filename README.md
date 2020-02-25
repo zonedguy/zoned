@@ -24,7 +24,7 @@ Requirements for all options:
 
 -----------------
 
-New Hotkey Options:
+New Hotkey Options: All options are Toggles and can be turned on and off with the same key. They will stop after the current series of actions (i.e. all dismantle jobs run).
 
 F4 = Full loop of 12 cycles to utilize all 240k glimmer buying/sharding Perfect Paradox guns (MAXIMUM SHARDS)
 
@@ -79,3 +79,7 @@ F9 = 1 full cycle of core farming.
 F10 = Donate fractaline ONLY via loop (Toggle on and off with F10)
 
 F11 = loop to buy materials / glimmer from Spider
+
+-----------------
+
+Esc = Kill all AHK script. Will need to reopen file.
