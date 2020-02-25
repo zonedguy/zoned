@@ -34,7 +34,7 @@ F6 = 1 cycle without dismantling for Paradox god roll farming
 
 -----------------
 
-F7 = Alternate weapon farming. Edit the downloaded file with an editor (i.e. Notepad) and see the first comments to update XPosChange and YPosChange variables.
+F7 = Alternate weapon farming. Use the weapon chart below as input for the script.
 
 	Weapon Selections:
 
