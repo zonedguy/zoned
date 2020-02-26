@@ -279,6 +279,7 @@ Sleep, 150
 Send {Right up}
 Sleep, 1200
 }
+return
 
 ; -------------------------------------------------------------------------
 ; F4 = Full 12 loops to utilize 240k glimmer to buy a full set of bounties, donate 
@@ -684,6 +685,8 @@ Send {Right down}
 Sleep, 150
 Send {Right up}
 Sleep, 1200
+
+Toggle := ! Toggle
 }
 return
 
@@ -823,6 +826,8 @@ Send {Esc up}
 Sleep, 1000
 MouseMove, -190, 0, 5, R
 Sleep, 1200
+
+Toggle := ! Toggle
 }
 return
 
@@ -1173,6 +1178,8 @@ Sleep, 150
 Send {Right up}
 Sleep, 1200
 
+Toggle := ! Toggle
+
 }
 return
 
@@ -1218,4 +1225,6 @@ return
 ; Left Ctl + Esc = Kill AHK script. Will need to be reactivated.
 ; -------------------------------------------------------------------------
 
-LCtrl & ESC::ExitApp
+LCtrl & Esc::ExitApp
+
+Ctrl & Esc::ExitApp
