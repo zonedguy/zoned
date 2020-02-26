@@ -1215,7 +1215,7 @@ Sleep, 200
 return
 
 ; -------------------------------------------------------------------------
-; Esc = Kill AHK script. Will need to be reactivated.
+; Left Ctl + Esc = Kill AHK script. Will need to be reactivated.
 ; -------------------------------------------------------------------------
 
 LCtrl & ESC::ExitApp
