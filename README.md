@@ -82,4 +82,4 @@ F11 = loop to buy materials / glimmer from Spider
 
 -----------------
 
-Esc = Kill all AHK script. Will need to reopen file.
+Ctrl + Esc = Kill all AHK script. Will need to reopen file.
