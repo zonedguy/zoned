@@ -1135,7 +1135,7 @@ Send {F1 down}
 Sleep, 150
 Send {F1 up}
 Sleep, 800
-MouseMove, -650, 120, 5, R
+MouseMove, -650, 300, 5, R
 Sleep, 800
 MouseMove, -100, 0, 5, R
 Sleep, 1000
@@ -1169,7 +1169,7 @@ Send {Esc up}
 Sleep, 1200
 MouseMove, 100, 0, 5, R
 Sleep, 1200
-MouseMove, 650, -120, 5, R
+MouseMove, 650, -300, 5, R
 Sleep, 1200
 
 ; Go to Window II
