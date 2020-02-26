@@ -1218,4 +1218,4 @@ return
 ; Esc = Kill AHK script. Will need to be reactivated.
 ; -------------------------------------------------------------------------
 
-ESC::ExitApp
+LCtrl & ESC::ExitApp
